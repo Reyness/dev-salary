@@ -1,0 +1,26 @@
+<h2>Lista de Salarios</h2>
+<table>
+  <tr>
+    <th>Región</th>
+    <th>Años de Experiencia</th>
+    <th>Salario</th>
+  </tr>
+  <tr *ngFor="let salary of salaries">
+    <td>{{ salary.region }}</td>
+    <td>{{ salary.years_experience }}</td>
+    <td>{{ salary.salary}}</td>
+  </tr>
+</table>
+
+<h2>Media de Salarios por Región</h2>
+<table>
+  <tr>
+    <th>Región</th>
+    <th>Salario Medio</th>
+  </tr>
+  <tr *ngFor="let avg of averages">
+    <td>{{ avg.region }}</td>
+    <td>{{ avg.avg_salary}}</td>
+  </tr>
+</table>
+
